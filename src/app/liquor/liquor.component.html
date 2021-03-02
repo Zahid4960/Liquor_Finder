@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Liquor Lists</h2>
+    <ul *ngIf="liquors" class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Id</div>
+        <div class="col col-2">Liquor Name</div>
+        <div class="col col-3">Liquor Type</div>
+        <div class="col col-3">Country</div>
+        <div class="col col-3">City</div>
+        <div class="col col-3">State</div>
+        <div class="col col-4">Website</div>
+      </li>
+      <li *ngFor="let liquor of liquors" class="table-row">
+        <div class="col col-1" >{{ liquor.id }}</div>
+        <div class="col col-2" >{{ liquor.name }}</div>
+        <div class="col col-3" >{{ liquor.brewery_type }}</div>
+        <div class="col col-3" >{{ liquor.country }}</div>
+        <div class="col col-3" >{{ liquor.city }}</div>
+        <div class="col col-3" >{{ liquor.state }}</div>
+        <div class="col col-4" ><button class="btn"><a style="text-decoration: none; color: black;" href="{{ liquor.website_url }}">Visit Website</a></button></div>
+      </li>
+    </ul>
+  </div>

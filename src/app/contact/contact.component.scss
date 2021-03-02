@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+
+    h1 {
+        text-align: center;
+        font-size: 40px;;
+    }
+
+    .contact-card {
+        width: 100%;
+        background-color: #111;
+
+        p {
+            color: #ffffff;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+           
+        }
+
+        span {
+            text-transform: lowercase;
+        }
+    }
+}
