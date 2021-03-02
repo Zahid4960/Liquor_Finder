@@ -5,10 +5,12 @@ import { from } from 'rxjs';
 // components
 import { LiquorComponent } from './liquor/liquor.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: 'liquor', component: LiquorComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: 'home', component: HomeComponent },
+  { path: 'liquor', component: LiquorComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
